@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "media",
+  "name": "AERA Media",
+  "version": "1.0.0",
+  "description": "Fullscreen local music and video player with playlists, seeking, GPU-composited video and AERA speaker audio.",
+  "type": "app-runtime",
+  "entry": "media",
+  "min_host_api": 1,
+  "payload": "runtime.xz",
+  "payload_url": "https://github.com/AERA-Plugins/media/releases/download/v1.0.0/runtime.xz",
+  "payload_size": 6751716,
+  "payload_sha256": "31669f5941a20bbfe14301927361a89043dedafbc95a17043a8a318447d9f871",
+  "expanded_size": 24752028,
+  "expanded_sha256": "10fea6cb1cf9d157b7c8f52121ab18cc829b01a0e39f7bcfe18d5745e4d511a2",
+  "member_count": 57,
+  "permissions": ["display", "audio-output", "read-only-storage"]
+}

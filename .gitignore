@@ -1,0 +1,4 @@
+/build/root/
+/build/runtime.xz
+/build/manifest.json
+*.sig.bin
