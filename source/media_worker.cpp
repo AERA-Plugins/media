@@ -42,6 +42,10 @@ static void Status(Player *player, Kind kind = Kind::kStatus,
   message.duration_ms = duration > 0 ? duration / GST_MSECOND : 0;
   snprintf(message.text, sizeof(message.text), "%s",
            text ? text : (player->title[0] ? player->title : "AERA Media"));
+  if (kind == Kind::kError) {
+    fprintf(stderr, "AERA Media playback error: %s\n", message.text);
+    fflush(stderr);
+  }
   if (!Send(message)) g_main_loop_quit(player->loop);
 }
 
@@ -90,8 +94,9 @@ static gboolean Bus(GstBus *, GstMessage *message, gpointer data) {
 }
 
 static bool SafePath(const char *path) {
-  if (!path || strlen(path) >= 500 || strncmp(path, "/sdcard/", 8)) return false;
-  return !strstr(path, "/../") && strcmp(path + strlen(path) - std::min<size_t>(3, strlen(path)), "/..") != 0;
+  if (!path || strlen(path) < 9 || strlen(path) >= 500 ||
+      strncmp(path, "/sdcard/", 8)) return false;
+  return !strstr(path, "/../") && strcmp(path + strlen(path) - 3, "/..") != 0;
 }
 
 static gboolean Input(gint, GIOCondition condition, gpointer data) {
