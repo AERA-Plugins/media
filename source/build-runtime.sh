@@ -5,16 +5,17 @@ output=${1:?Pass a staged runtime directory}
 sysroot=${AERA_BROWSER_SYSROOT:-/tmp/aera-webkit-sysroot}
 cc=${AERA_CXX:-/tmp/aera-webkit/clang++}
 pkg_config=${AERA_PKG_CONFIG:-/tmp/aera-webkit/pkg-config}
-strip=${AERA_STRIP:-/home/koaan/android/fox_14.1/prebuilts/clang/host/linux-x86/clang-r510928/bin/llvm-strip}
+strip=${AERA_STRIP:-/home/koaan/Desktop/AERA_16.0/prebuilts/clang/host/linux-x86/clang-r547379/bin/llvm-strip}
+linker=${AERA_LLD:-/home/koaan/Desktop/AERA_16.0/prebuilts/clang/host/linux-x86/clang-r547379/bin/ld.lld}
 browser_root=${AERA_BROWSER_ROOT:-/tmp/aera-browser-v130-root}
-read -r -a cflags <<< "$($pkg_config --cflags gstreamer-app-1.0 gio-unix-2.0)"
-read -r -a libs <<< "$($pkg_config --libs gstreamer-app-1.0 gio-unix-2.0)"
+read -r -a cflags <<< "$($pkg_config --cflags gstreamer-app-1.0 gstreamer-pbutils-1.0 gio-unix-2.0)"
+read -r -a libs <<< "$($pkg_config --libs gstreamer-app-1.0 gstreamer-pbutils-1.0 gio-unix-2.0)"
 target=(--target=aarch64-alpine-linux-musl --sysroot="$sysroot" --gcc-toolchain="$sysroot/usr")
 build=$(mktemp -d)
 trap 'rm -rf "$build"' EXIT
 "$cc" "${target[@]}" -std=c++17 -Os -g0 -Wall -Wextra -Werror \
   "${cflags[@]}" "$source_dir/media_worker.cpp" -c -o "$build/media_worker.o"
-"$cc" "${target[@]}" --ld-path=/home/koaan/android/fox_14.1/prebuilts/clang/host/linux-x86/clang-r510928/bin/ld.lld \
+"$cc" "${target[@]}" --ld-path="$linker" \
   "$build/media_worker.o" "${libs[@]}" -Wl,-z,relro,-z,now,--gc-sections \
   -o "$build/aera-media"
 "$strip" --strip-unneeded "$build/aera-media"
