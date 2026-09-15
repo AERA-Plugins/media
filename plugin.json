@@ -2,8 +2,8 @@
   "schema": 1,
   "id": "media",
   "name": "AERA Media",
-  "version": "1.2.0",
-  "description": "Orientation-aware fullscreen music and video player with overlay controls, draggable seeking, GPU-composited video and AERA speaker audio.",
+  "version": "1.2.1",
+  "description": "Music and video player with rotation, timeline controls, and speaker audio.",
   "type": "app-runtime",
   "entry": "media",
   "min_host_api": 1,
@@ -22,127 +22,131 @@
   "localizations": {
     "ar_SA": {
       "name": "AERA Media",
-      "description": "مشغل موسيقى وفيديو كامل الشاشة مع وعي الاتجاه مع عناصر تحكم متداخلة، والتمرير القابل للسحب، والفيديو المركب عبر GPU وصوت المتحدث AERA."
+      "description": "مشغل الموسيقى والفيديو مع إمكانية التدوير وعناصر التحكم في الجدول الزمني وصوت مكبر الصوت."
     },
     "bg_BG": {
       "name": "AERA Media",
-      "description": "Музикален и видео плейър на цял екран, ориентиран спрямо устройството, с контроли върху дисплея, плъзгащо се търсене, видео, композиранo от GPU, и аудио на говорителя AERA."
+      "description": "Музикален и видео плейър с ротация, контроли на времевата линия и аудио на високоговорителя."
     },
     "bn_BD": {
       "name": "AERA Media",
-      "description": "ওরিয়েন্টেশন সচেতন ফুলস্ক্রিন মিউজিক এবং ভিডিও প্লেয়ার ওভারলে কন্ট্রোল, ড্র্যাগেবল সিকিং, GPU-সংকলিত ভিডিও এবং AERA স্পিকার অডিও সহ।"
+      "description": "ঘূর্ণন, টাইমলাইন নিয়ন্ত্রণ এবং স্পিকার অডিও সহ সঙ্গীত এবং ভিডিও প্লেয়ার।"
     },
     "ca_ES": {
       "name": "AERA Media",
-      "description": "Reproductor de música i vídeo en pantalla completa amb detecció d'orientació, controls superposats, cerca arrossegable, vídeo compost per GPU i àudio del altaveu AERA."
+      "description": "Reproductor de música i vídeo amb rotació, controls de línia de temps i àudio dels altaveus."
     },
     "cs_CZ": {
       "name": "AERA Media",
-      "description": "Hudební a video přehrávač přizpůsobený orientaci s překryvnými ovládacími prvky, přetahováním hledání, videem složeným na GPU a zvukem reproduktoru AERA."
+      "description": "Přehrávač hudby a videa s rotací, ovládáním časové osy a zvukem reproduktoru."
     },
     "de_DE": {
       "name": "AERA Media",
-      "description": "Orientierungsbewusster Vollbild-Musik- und Videoplayer mit Overlay-Steuerung, ziehbarem Suchen, GPU-kombiniertem Video und AERA Lautsprecher-Audio."
+      "description": "Musik- und Videoplayer mit Drehung, Zeitleiste und Lautsprecher-Audio."
     },
     "el_GR": {
       "name": "AERA Media",
-      "description": "Πανόραμα μουσικής και βίντεο πλήρους οθόνης με επίστρωση ελέγχων, σύρσιμο για αναζήτηση, βίντεο συνθετό GPU και ήχο ηχείου AERA."
+      "description": "Πρόγραμμα αναπαραγωγής μουσικής και βίντεο με περιστροφή, χειριστήρια γραμμής χρόνου και ήχο ηχείων."
     },
     "es-ES": {
       "name": "AERA Media",
-      "description": "Reproductor de música y video a pantalla completa consciente de la orientación con controles superpuestos, búsqueda arrastrable, video compuesto por GPU y audio de altavoz AERA."
+      "description": "Reproductor de música y vídeo con rotación, controles de línea de tiempo y audio del altavoz."
     },
     "fa_IR": {
       "name": "AERA Media",
-      "description": "پخش‌کننده موسیقی و ویدئو تمام‌صفحه با قابلیت تشخیص جهت با کنترل‌های روی صفحه، جستجوی قابل کشیدن، ویدئوی ترکیب‌شده با GPU و صدای بلندگو AERA."
+      "description": "پخش کننده موسیقی و ویدیو با چرخش، کنترل های جدول زمانی و صدای بلندگو."
     },
     "fr_FR": {
       "name": "AERA Media",
-      "description": "Lecteur de musique et vidéo en plein écran sensible à l'orientation avec commandes superposées, recherche par glissement, vidéo composée par GPU et audio des haut-parleurs AERA."
+      "description": "Lecteur de musique et vidéo avec rotation, commandes de chronologie et haut-parleur audio."
     },
     "he_IL": {
       "name": "AERA Media",
-      "description": "נגן מוסיקה ווידאו במסך מלא המודע לכיוון עם בקרות חפיפה, חיפוש גרירה, וידאו מורכב באמצעות GPU ואודיו רמקול AERA."
+      "description": "נגן מוזיקה ווידאו עם סיבוב, בקרות ציר זמן ואודיו של רמקול."
     },
     "hi_IN": {
       "name": "AERA Media",
-      "description": "ओरिएंटेशन-संवेदनशील फुलस्क्रीन संगीत और वीडियो प्लेयर ओवरले नियंत्रण के साथ, ड्रैग करने योग्य सीकिंग, GPU-समायोजित वीडियो और AERA स्पीकर ऑडियो के साथ।"
+      "description": "रोटेशन, टाइमलाइन नियंत्रण और स्पीकर ऑडियो के साथ संगीत और वीडियो प्लेयर।"
     },
     "hu": {
       "name": "AERA Media",
-      "description": "Tájolásérzékeny teljes képernyős zene- és videolejátszó átfedéses vezérlőkkel, húzható kereséssel, GPU-val összerakott videóval és AERA hangszóró hangjával."
+      "description": "Zene- és videolejátszó forgatással, idővonal-vezérlőkkel és hangszóró hanggal."
     },
     "id_ID": {
       "name": "AERA Media",
-      "description": "Pemutar musik dan video layar penuh yang mendeteksi orientasi dengan kontrol overlay, pencarian yang dapat diseret, video terkomposit GPU dan audio speaker AERA."
+      "description": "Pemutar musik dan video dengan rotasi, kontrol garis waktu, dan audio speaker."
     },
     "it_IT": {
       "name": "AERA Media",
-      "description": "Lettore musicale e video a schermo intero con orientamento, controlli overlay, ricerca trascinabile, video composito GPU e audio a speaker AERA."
+      "description": "Lettore musicale e video con rotazione, controlli della timeline e audio dell'altoparlante."
     },
     "ja_JP": {
       "name": "AERA Media",
-      "description": "オーバーレイコントロール付き、ドラッグ可能なシーク、GPU 合成ビデオおよび AERA スピーカー音声対応の向き対応フルスクリーン音楽・ビデオプレーヤー。"
+      "description": "回転、タイムライン コントロール、スピーカー オーディオを備えた音楽およびビデオ プレーヤー。"
     },
     "ko_KR": {
       "name": "AERA Media",
-      "description": "오리엔테이션 인식 전체화면 음악 및 비디오 플레이어로 오버레이 컨트롤, 드래그 가능한 탐색, GPU 합성 비디오 및 AERA 스피커 오디오 제공"
+      "description": "회전, 타임라인 제어, 스피커 오디오가 포함된 음악 및 비디오 플레이어입니다."
     },
     "nl_NL": {
       "name": "AERA Media",
-      "description": "Oriëntatiebewuste fullscreen muziek- en videospeler met overlay-bedieningselementen, sleepbare zoekfunctie, GPU-gecompositeerde video en AERA luidspreker-audio."
+      "description": "Muziek- en videospeler met rotatie, tijdlijnbediening en luidsprekeraudio."
     },
     "no_NO": {
       "name": "AERA Media",
-      "description": "Orienteringsbevisst fullskjerm musikk- og videospiller med overleggskontroller, dragbar søking, GPU-komposittet video og AERA høyttalerlyd."
+      "description": "Musikk- og videospiller med rotasjon, tidslinjekontroller og høyttalerlyd."
     },
     "pl_PL": {
       "name": "AERA Media",
-      "description": "Odtwarzacz muzyki i wideo w trybie pełnoekranowym, reagujący na orientację, z kontrolkami nakładki, przesuwaniem suwaka, wideo kompozytowanym przez GPU i dźwiękiem głośnika AERA."
+      "description": "Odtwarzacz muzyki i wideo z możliwością obracania, sterowaniem osią czasu i dźwiękiem z głośników."
     },
     "pt_BR": {
       "name": "AERA Media",
-      "description": "Reprodutor de música e vídeo em tela cheia sensível à orientação com controles sobrepostos, busca arrastável, vídeo composto por GPU e áudio do alto-falante AERA."
+      "description": "Reprodutor de música e vídeo com rotação, controles de linha do tempo e áudio do alto-falante."
     },
     "pt_PT": {
       "name": "AERA Media",
-      "description": "Reprodutor de música e vídeo em ecrã completo sensível à orientação com controlos sobrepostos, procura arrastável, vídeo composto por GPU e áudio do altifalante AERA."
+      "description": "Reprodutor de música e vídeo com rotação, controlos de linha do tempo e áudio do altifalante."
     },
     "ro_RO": {
       "name": "AERA Media",
-      "description": "Player de muzică și video fullscreen conștient de orientare, cu controale suprapuse, căutare prin tragere, video compus pe GPU și audio la difuzor AERA."
+      "description": "Player muzical și video cu rotație, comenzi cronologice și audio difuzor."
     },
     "ru": {
       "name": "AERA Media",
-      "description": "Интерфейс воспроизведения музыки и видео в полноэкранном режиме с учетом ориентации, с элементами управления поверх, возможностью перетаскивания для перемотки, видеокомпозицией на GPU и звуком через динамик AERA."
+      "description": "Музыкальный и видеоплеер с вращением, элементами управления временной шкалой и звуком через динамик."
     },
     "sr_Cyrl": {
       "name": "AERA Media",
-      "description": "Orijentaciono-svesni fullscreen muzički i video plejer sa overlay kontrolama, povlačivim pretraživanjem, GPU-kompozitovanim videom i AERA zvukom zvučnika."
+      "description": "Музички и видео плејер са ротацијом, контролама временске линије и звуком звучника."
+    },
+    "sv_SE": {
+      "name": "AERA Media",
+      "description": "Musik- och videospelare med rotation, tidslinje och högtalarljud."
     },
     "th_TH": {
       "name": "AERA Media",
-      "description": "เครื่องเล่นเพลงและวิดีโอแบบเต็มหน้าจอที่ทราบการวางแนว พร้อมการควบคุมแบบซ้อนทับ การเลื่อนหาที่กำหนดเอง, วิดีโอที่รวมโดย GPU และเสียงลำโพง AERA"
+      "description": "เครื่องเล่นเพลงและวิดีโอพร้อมการหมุน การควบคุมไทม์ไลน์ และเสียงลำโพง"
     },
     "tr_TR": {
       "name": "AERA Media",
-      "description": "Yerleşik kontrollerle yatay/dikey tam ekran müzik ve video oynatıcı, sürüklenebilir arama, GPU ile birleştirilmiş video ve AERA hoparlör sesi."
+      "description": "Döndürme, zaman çizelgesi kontrolleri ve hoparlör sesi özelliklerine sahip müzik ve video oynatıcı."
     },
     "uk_UA": {
       "name": "AERA Media",
-      "description": "Музичний та відеопрогравач на весь екран, орієнтований на екран, з накладними елементами керування, перетягуванням для пошуку, відео, композитованим за допомогою GPU, та аудіо динаміка AERA."
+      "description": "Музичний та відеоплеєр із обертанням, елементами керування часовою шкалою та звуком динаміків."
     },
     "vi_VN": {
       "name": "AERA Media",
-      "description": "Trình phát nhạc và video toàn màn hình nhận biết hướng với các điều khiển phủ, tìm kiếm kéo được, video kết hợp GPU và âm thanh loa AERA."
+      "description": "Trình phát nhạc và video có tính năng xoay, điều khiển dòng thời gian và âm thanh loa."
     },
     "zh_CN": {
       "name": "AERA Media",
-      "description": "支持方向感知的全屏音乐和视频播放器，具有覆盖控件、可拖动的搜索、GPU 合成视频和 AERA 扬声器音频。"
+      "description": "具有旋转、时间线控制和扬声器音频的音乐和视频播放器。"
     },
     "zh_TW": {
       "name": "AERA Media",
-      "description": "具備方向感應全螢幕音樂和影片播放器，附覆蓋控制，支援拖曳搜尋、GPU 合成影片和 AERA 喇叭音訊。"
+      "description": "具有旋轉、時間軸控制和揚聲器音訊的音樂和視訊播放器。"
     }
   }
 }
