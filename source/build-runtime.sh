@@ -26,7 +26,7 @@ cp "$build/aera-media" "$output/usr/bin/"
 cp -L "$sysroot/lib/ld-musl-aarch64.so.1" "$output/lib/"
 ln -s ld-musl-aarch64.so.1 "$output/lib/libc.musl-aarch64.so.1"
 plugins=(app audioconvert audioparsers audioresample coreelements de265 fdkaac flac
-  isomp4 matroska mpg123 openh264 opus playback typefindfunctions
+  id3demux isomp4 matroska mpg123 ogg openh264 opus playback typefindfunctions vorbis
   videoconvertscale videoparsersbad volume vpx wavparse)
 for plugin in "${plugins[@]}"; do
   cp -L "$sysroot/usr/lib/gstreamer-1.0/libgst${plugin}.so" \
